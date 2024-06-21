@@ -1,0 +1,10 @@
+<a href="/tweet/<% tweet._id %>">Back</a>
+
+<form action="/tweet/update/<%= tweet._id%>" method="POST">
+    <h1>Title</h1>
+    <input type="text" name="Title" value="<%= tweet.Title %>">
+    <h1>tweet</h1>
+    <textarea name="Tweet"><%= tweet.Tweet %></textarea>
+
+    <button>Submit</button>
+</form>

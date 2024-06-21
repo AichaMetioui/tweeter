@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button><a href="/addTweet">Tweet</a> </button>
+    <% for (let i=0 ; i<tweets.length ; i++){ %>
+
+        <h2>
+            <%= tweets[i].Title %>
+        </h2>
+        <p>
+            <%= tweets[i].Tweet %>
+        </p>
+        <a href="/tweet/<%=tweets[i]._id%>">See More</a>
+
+        <% } %>
+</body>
+
+</html>
